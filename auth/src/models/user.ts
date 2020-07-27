@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import { Password } from "../services/password";
 
 // An interface that describes the properties
-// that are requierd to create a new user
+// that are required to create a new user
 interface UserAttrs {
 	email: string;
 	password: string;
@@ -36,7 +36,8 @@ const userSchema = new mongoose.Schema(
 		toJSON: {
 			transform(doc, ret) {
 				ret.id = ret._id;
-				delete ret._id
+				delete ret._id;
+				delete ret.password;
 				delete ret.__v;
 			},
 		},
