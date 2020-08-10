@@ -3,7 +3,7 @@ import { app } from '../../app';
 
 it('fails when an incorrect password is supplied', async () => {
 	await request(app)
-		.post('/api/users/signup')
+		.post('/api/users/auth')
 		.send({
 			email: 'test@test.com',
 			password: 'password'

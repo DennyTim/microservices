@@ -4,11 +4,12 @@ import express, {
 } from 'express';
 import { body } from 'express-validator';
 import jwt from 'jsonwebtoken';
-
+import {
+	BadRequestError,
+	validateRequest
+} from '@ncticketing/common';
 import { Password } from '../services/password';
 import { User } from '../models/user';
-import { validateRequest } from '../middlewares/validate-request';
-import { BadRequestError } from '../errors/bad-request-error';
 
 const router = express.Router();
 
@@ -54,7 +55,8 @@ router.post(
 			jwt: userJwt
 		};
 
-		res.status(200).send(existingUser);
+		res.status(200)
+		   .send(existingUser);
 	}
 );
 
