@@ -8,6 +8,7 @@ import {
 	BadRequestError,
 	validateRequest
 } from '@ncticketing/common';
+
 import { Password } from '../services/password';
 import { User } from '../models/user';
 
@@ -22,7 +23,7 @@ router.post(
 		body('password')
 			.trim()
 			.notEmpty()
-			.withMessage('You must supply a password')
+			.withMessage('You must supply a password'),
 	],
 	validateRequest,
 	async (req: Request, res: Response) => {
@@ -45,14 +46,14 @@ router.post(
 		const userJwt = jwt.sign(
 			{
 				id: existingUser.id,
-				email: existingUser.email
+				email: existingUser.email,
 			},
 			process.env.JWT_KEY!
 		);
 
 		// Store it on session object
 		req.session = {
-			jwt: userJwt
+			jwt: userJwt,
 		};
 
 		res.status(200)

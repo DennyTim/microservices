@@ -67,7 +67,7 @@ module.exports = _interopRequireDefault;
 
 /***/ "./node_modules/@babel/runtime/regenerator/index.js":
 /*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  !*** ./node_modules/@babel/runtime/regenerator/index.jsx ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {

@@ -501,7 +501,7 @@ module.exports = _unsupportedIterableToArray;
 
 /***/ "./node_modules/@babel/runtime/regenerator/index.js":
 /*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  !*** ./node_modules/@babel/runtime/regenerator/index.jsx ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -3748,7 +3748,7 @@ var objectKeys = Object.keys || function (obj) {
 
 /***/ "./node_modules/querystring-es3/index.js":
 /*!***********************************************!*\
-  !*** ./node_modules/querystring-es3/index.js ***!
+  !*** ./node_modules/querystring-es3/index.jsx ***!
   \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -3957,7 +3957,7 @@ exports.typeOf = typeOf;
 
 /***/ "./node_modules/react-is/index.js":
 /*!****************************************!*\
-  !*** ./node_modules/react-is/index.js ***!
+  !*** ./node_modules/react-is/index.jsx ***!
   \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -4081,7 +4081,7 @@ function describeComponentFrame (name, source, ownerName) {
 
     {
       // In DEV, include code for a common special case:
-      // prefer "folder/index.js" instead of just "index.js".
+      // prefer "folder/index.jsx" instead of just "index.jsx".
       if (/^index\./.test(fileName)) {
         var match = path.match(BEFORE_SLASH_RE);
 
@@ -5898,7 +5898,7 @@ exports.version = ReactVersion;
 
 /***/ "./node_modules/react/index.js":
 /*!*************************************!*\
-  !*** ./node_modules/react/index.js ***!
+  !*** ./node_modules/react/index.jsx ***!
   \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
