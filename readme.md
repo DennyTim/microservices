@@ -1,6 +1,6 @@
-#Reference
+# Reference
 
-###Add new project
+### Add new project
 
 1. Create a folder for project.
 2. Move `.dockerignore, index.ts, nats-wrapper.ts, Dockerfile, tsconfig.json` into necessary folder
@@ -11,7 +11,7 @@
 7. Create depl for application-service inside `infra/k8s`
 8. Add to `skaffold.yaml` new project like below
 ```yaml    
-     - image: 4567876545678/expiration
+     - image: *dockerid*/expiration
        context: expiration
        docker:
          dockerfile: Dockerfile
