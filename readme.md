@@ -21,3 +21,18 @@
              dest: .
 ```
 * Check deployments ```shell kubectl get pods```
+
+### Add new secret
+
+1. Add new secret
+```shell
+   kubectl create secret generic *name* --from-literal *key*=*value*
+```
+2. Check it after adding
+```shell
+    kubectl get secrets
+```
+3. Delete secret if it's wrong
+```shell
+    kubectl delete secret *name*
+```
